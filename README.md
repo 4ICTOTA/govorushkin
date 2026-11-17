@@ -4,7 +4,9 @@
 4–7 лет по рекомендации логопеда. Герой — Герка Говорушкин.
 Приложение в разработке; упражнения готовятся, платежи на сайте не принимаются.
 
-Адрес GitHub Pages: https://4ictota.github.io/speech-practice-site/
+Публичный репозиторий: https://github.com/4ICTOTA/govorushkin
+
+Адрес GitHub Pages: https://4ictota.github.io/govorushkin/
 [Состояние исходников, проверки и публикация](docs/STATE.md).
 
 ## Устройство
