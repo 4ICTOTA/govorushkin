@@ -37,12 +37,12 @@
 
 ## Публикация и границы
 
-Публичный репозиторий: https://github.com/4ICTOTA/speech-practice-site
-GitHub Pages: https://4ictota.github.io/speech-practice-site/
+Публичный репозиторий: https://github.com/4ICTOTA/govorushkin
+GitHub Pages: https://4ictota.github.io/govorushkin/
 
-Редизайн и редактура слиты в main через [PR #1](https://github.com/4ICTOTA/speech-practice-site/pull/1)
-и [PR #2](https://github.com/4ICTOTA/speech-practice-site/pull/2).
-Исходники актуальной публикации — 2df9570; [Pages workflow](https://github.com/4ICTOTA/speech-practice-site/actions/runs/44175719507)
+Редизайн и редактура слиты в main через [PR #1](https://github.com/4ICTOTA/govorushkin/pull/1)
+и [PR #2](https://github.com/4ICTOTA/govorushkin/pull/2).
+Исходники актуальной публикации — 2df9570; [Pages workflow](https://github.com/4ICTOTA/govorushkin/actions/runs/44175719507)
 завершился успешно. Все десять опубликованных файлов возвращают HTTP 200
 и побайтово совпадают с main. В публичной версии повторно проверены запятые,
 сокращённые тексты и переход к экранам. Отдельный сервис не добавлен.
