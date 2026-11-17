@@ -3,85 +3,127 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f8f6ef">
-    <title>Speech Practice — приложение речевых упражнений</title>
-    <meta name="description" content="Готовим Android-приложение для речевых упражнений: картинки, озвучка, повторение и запись голоса. Проект в разработке.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#faf8f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#172623" media="(prefers-color-scheme: dark)">
+    <title>Говорушкин — домашняя речевая практика</title>
+    <meta name="description" content="Знакомьтесь: Герка Говорушкин. Готовим Android-приложение для домашней речевой практики детей 4–7 лет по рекомендации логопеда. Посмотрите текущие экраны проекта.">
     <link rel="canonical" href="https://4ictota.github.io/speech-practice-site/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:title" content="Speech Practice — речевые упражнения">
-    <meta property="og:description" content="Картинки, звуки и собственный голос. Готовим приложение для Android.">
+    <meta property="og:title" content="Говорушкин — домашняя речевая практика">
+    <meta property="og:description" content="Герка Говорушкин и четыре направления речевой практики. Знакомство с приложением для Android, которое мы сейчас создаём.">
     <meta property="og:url" content="https://4ictota.github.io/speech-practice-site/">
-    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <meta property="og:image" content="https://4ictota.github.io/speech-practice-site/assets/icon.png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <meta property="og:image:alt" content="Герка Говорушкин — рыжий мальчик на мятном фоне">
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/icon.png">
+    <link rel="preload" href="./assets/fonts/Nunito.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main">Перейти к содержанию</a>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Speech Practice — в начало страницы">
-          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 9h26v18H19l-8 7v-7H7z"/><path class="brand-wave" d="M14 17v3m6-6v9m6-6v3"/></svg>
-          <span>speech practice<span class="brand-dot">.</span></span>
+        <a class="brand" href="#top" aria-label="Говорушкин — в начало страницы">
+          <img src="./assets/icon.png" alt="" width="48" height="48">
+          <span>Говорушкин</span>
         </a>
         <nav aria-label="Основная навигация">
-          <a href="#idea">Идея</a>
-          <a href="#status">Статус</a>
-          <a href="#contact">Связаться <span aria-hidden="true">↗</span></a>
+          <a href="#screens">Экраны</a>
+          <a href="#parents">Для родителей</a>
+          <a href="#about">О проекте</a>
         </nav>
       </header>
-
-      <main id="main">
-        <section class="hero" id="top" aria-labelledby="hero-title">
+      <main id="main" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Android · проект в разработке</p>
-            <h1 id="hero-title">Речевые упражнения.<br><em>В своём ритме.</em></h1>
-            <p class="hero-description">Готовим приложение, в котором картинки, озвучка и собственный голос станут частью коротких занятий по развитию речи.</p>
-            <a class="button" href="#idea">Познакомиться с идеей <span aria-hidden="true">↓</span></a>
-            <p class="hero-note">Первая версия ещё впереди. Начинаем с простого.</p>
-          </div>
-
-          <figure class="voice-art" aria-label="Иллюстрация идеи: послушать, повторить и услышать себя">
-            <div class="art-caption"><span class="art-star" aria-hidden="true">✳</span> У каждого голоса свой ритм</div>
-            <div class="speech-card speech-card-main">
-              <span class="card-kicker">Маленькое упражнение</span>
-              <span class="example-word">Привет, мир<span>!</span></span>
-              <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <span class="card-caption">Послушай. Повтори. Услышь себя.</span>
+            <p class="eyebrow">Речевая практика дома · 4–7 лет</p>
+            <h1 id="hero-title">Домашняя практика<br>с Геркой Говорушкиным.</h1>
+            <p class="lead">Создаём «Говорушкин», чтобы было удобнее повторять дома материал, который подобрал логопед.</p>
+            <div class="actions">
+              <a class="button" href="#screens">Посмотреть экраны <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+              <a class="button button-secondary" href="#parents">Для родителей</a>
             </div>
-            <div class="small-bubble" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="24" y="9" width="16" height="30" rx="8"/><path d="M17 29v4a15 15 0 0 0 30 0v-4M32 48v9m-8 0h16"/></svg></div>
-            <figcaption>Иллюстрация концепции, не экран готового приложения</figcaption>
+            <p class="note">Приложение для Android в разработке. Упражнения пока готовятся.</p>
+          </div>
+          <figure class="character">
+            <figcaption>Привет!<br>Я Герка Говорушкин.</figcaption>
+            <img src="./assets/hero.webp" alt="Герка Говорушкин приветственно машет рукой" width="360" height="360" fetchpriority="high">
           </figure>
         </section>
-
-        <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <section class="directions" aria-labelledby="directions-title">
+          <h2 id="directions-title">Четыре направления</h2>
+          <div class="category-grid">
+            <article class="category sonorants">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v6m4-10v14m6-14v14m4-10v6"/></svg>
+              <h3>Сонорные</h3><p>Р, Рь, Л, Ль</p>
+            </article>
+            <article class="category sibilants">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7q3-4 7 0t11 0M3 12q3-4 7 0t11 0M3 17q3-4 7 0t11 0"/></svg>
+              <h3>Шипящие</h3><p>Ш, Ж, Ч, Щ</p>
+            </article>
+            <article class="category whistling">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h6"/></svg>
+              <h3>Свистящие</h3><p>С, Сь, З, Зь, Ц</p>
+            </article>
+            <article class="category articulation">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M4 10c4 0 6-2 7-5 2 3 5 5 9 5M8 13h.01M16 13h.01M9 17q3 2 6 0"/></svg>
+              <h3>Артикуляция</h3><p>Упражнения для губ и языка</p>
+            </article>
+          </div>
+        </section>
+        <section class="screens section" id="screens" aria-labelledby="screens-title">
           <div class="section-heading">
-            <p class="eyebrow">Каким мы его задумали</p>
-            <h2 id="idea-title">Три понятных шага<br>для каждого занятия.</h2>
-            <p>В первой версии планируем упражнения с картинками, озвучкой и возможностью записать свой голос.</p>
+            <div><p class="eyebrow">Знакомство с приложением</p><h2 id="screens-title">Вот как всё выглядит</h2></div>
+            <p>Настоящие экраны текущей версии. Содержание упражнений добавим после подготовки материалов.</p>
           </div>
-          <div class="steps">
-            <article class="step"><span class="step-number">01</span><h3>Смотреть и слушать</h3><p>Знакомиться со словами через картинки и звуковые примеры.</p></article>
-            <article class="step"><span class="step-number">02</span><h3>Повторять и пробовать</h3><p>Выполнять небольшие задания, возвращаться к ним и заниматься в удобном темпе.</p></article>
-            <article class="step"><span class="step-number">03</span><h3>Слушать свой голос</h3><p>Записывать произношение и прослушивать запись прямо в приложении.</p></article>
+          <div class="screen-grid">
+            <figure class="screen-card sonorants">
+              <figcaption><h3>Главная</h3><p>Герка Говорушкин и выбор направления</p></figcaption>
+              <div class="phone"><img src="./assets/screens/home.webp" alt="Главная приложения Говорушкин: приветствие Герки Говорушкина, четыре направления и вход для взрослых" width="390" height="845" loading="lazy" decoding="async"></div>
+            </figure>
+            <figure class="screen-card sibilants">
+              <figcaption><h3>Звук Р</h3><p>Своя сцена для каждого звука</p></figcaption>
+              <div class="phone"><img src="./assets/screens/sound.webp" alt="Экран звука Р: Герка Говорушкин с буквой Р и ракетой, надпись Упражнения готовятся" width="323" height="700" loading="lazy" decoding="async"></div>
+            </figure>
+            <figure class="screen-card articulation">
+              <figcaption><h3>Артикуляция</h3><p>Отдельный раздел для гимнастики</p></figcaption>
+              <div class="phone"><img src="./assets/screens/articulation.webp" alt="Раздел Артикуляция: Герка Говорушкин с зеркалом и надпись Упражнения готовятся" width="323" height="700" loading="lazy" decoding="async"></div>
+            </figure>
           </div>
         </section>
-
-        <section class="project-status" id="status" aria-labelledby="status-title">
-          <div><p class="eyebrow">Сейчас</p><h2 id="status-title">Создаём<br>первую версию.</h2></div>
-          <div class="status-details">
-            <p>Speech Practice — рабочее название проекта. Приложение находится на раннем этапе разработки и пока не опубликовано в RuStore.</p>
-            <p>На этой странице будем обновлять информацию о проекте. Ссылка на приложение появится после публикации.</p>
-            <div class="testing-note"><span class="testing-icon" aria-hidden="true">↗</span><div><h3>О тестировании оплаты</h3><p>Готовим интеграцию с Robokassa в тестовом режиме, без списания средств. На этой странице платежи не принимаются.</p></div></div>
+        <section class="parents section" id="parents" aria-labelledby="parents-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Для родителей</p><h2 id="parents-title">Продолжение занятий<br>с вашим логопедом</h2></div>
+            <p>«Говорушкин» задуман как дополнение к индивидуальным занятиям. Логопед помогает выбрать материал, а взрослый поддерживает ребёнка во время домашней практики.</p>
           </div>
+          <ol class="steps">
+            <li><h3>Совет логопеда</h3><p>Специалист подсказывает, какие звуки и упражнения подходят ребёнку сейчас.</p></li>
+            <li><h3>Знакомый материал</h3><p>Готовим упражнения по четырём направлениям, чтобы их было удобно находить в приложении.</p></li>
+            <li><h3>Практика вместе</h3><p>Родитель помогает понять задание и повторить материал в удобном темпе.</p></li>
+          </ol>
         </section>
-
-        <section class="contact-section" id="contact" aria-labelledby="contact-title">
-          <div><p class="eyebrow">Обратная связь</p><h2 id="contact-title">Есть идея или вопрос?</h2><p>Напишите разработчику на GitHub. Обращения будут публичными.</p></div>
-          <a class="contact-link" href="https://github.com/4ICTOTA/speech-practice-site/issues/new">Задать вопрос на GitHub <span aria-hidden="true">↗</span></a>
+        <section class="about section" id="about" aria-labelledby="about-title">
+          <div class="about-copy">
+            <p class="eyebrow">О проекте</p><h2 id="about-title">Начинаем с понятного</h2>
+            <p>Сейчас в приложении есть главная, четыре направления, выбор звука и иллюстрации с Геркой Говорушкиным. Разделы пока показывают заглушки: сами упражнения ещё готовятся.</p>
+            <p>Планируем картинки, озвучку, упражнения и запись голоса для прослушивания. Содержание будем добавлять по мере подготовки и проверки.</p>
+          </div>
+          <div class="project-note" id="contact">
+            <h3>На связи</h3>
+            <p>Идеями и замечаниями о проекте можно поделиться на GitHub. Обращения публичные — пишите без личных данных ребёнка.</p>
+            <a class="text-link" href="https://github.com/4ICTOTA/speech-practice-site/issues/new">Написать о проекте <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+            <p class="note">Платежи на сайте не принимаются. Приложение ещё не опубликовано в RuStore.</p>
+          </div>
         </section>
       </main>
-
-      <footer class="site-footer"><span>Speech Practice · 2026</span><span>Сделано с вниманием к каждому слову.</span><a href="https://github.com/4ICTOTA/speech-practice-site">Об этой странице <span aria-hidden="true">↗</span></a></footer>
+      <footer class="site-footer">
+        <span>Говорушкин · Проект в разработке</span>
+        <div><a href="#top">Наверх ↑</a><a href="./licenses.html">Лицензия шрифта Nunito</a></div>
+      </footer>
     </div>
   </body>
 </html>
