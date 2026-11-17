@@ -83,20 +83,15 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
 .whistling { background: var(--lilac); }
 .articulation { background: var(--sand); }
 .section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 48px; }
-.section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; margin-bottom: 32px; }
-.section-heading .eyebrow, .about .eyebrow { margin-bottom: 12px; }
+.section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+.screens > h2 { margin-bottom: 24px; }
 .screen-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .screen-card { display: flex; flex-direction: column; align-items: center; gap: 24px; min-width: 0; padding: 28px 20px; border-radius: var(--card-radius); }
 .screen-card figcaption { width: 100%; flex: 1; }
-.screen-card figcaption p { font-size: .9375rem; margin-top: 8px; }
 .phone { width: min(100%, 238px); overflow: hidden; border: 6px solid #263e43; border-radius: 28px; background: #faf8f2; }
 .phone img { width: 100%; }
-.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; list-style: none; counter-reset: steps; padding: 0; margin: 0; }
-.steps li { border-top: 2px solid var(--line); padding-top: 20px; counter-increment: steps; }
-.steps li::before { content: "0" counter(steps); display: block; margin-bottom: 12px; color: var(--primary); font-weight: 900; }
-.steps p { margin-top: 12px; }
 .about { display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: start; padding-bottom: 48px; }
-.about-copy > p:not(.eyebrow) { margin-top: 20px; }
+.about-copy > p { margin-top: 20px; }
 .project-note { border-radius: var(--card-radius); background: var(--mint); padding: 28px; }
 .project-note p { margin-top: 16px; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; max-width: 100%; color: var(--primary); font-weight: 800; margin-top: 12px; }
@@ -120,7 +115,7 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
   .hero { grid-template-columns: 1fr; gap: 28px; padding-block: 32px; }
   .character { padding-top: 24px; }
   .character img { width: min(100%, 300px); }
-  .section-heading, .screen-grid, .steps, .about { grid-template-columns: 1fr; gap: 24px; }
+  .section-heading, .screen-grid, .about { grid-template-columns: 1fr; gap: 24px; }
   .section-heading { align-items: start; }
   .section { padding-top: 32px; margin-top: 32px; }
   .screen-card { padding: 28px 24px; }
