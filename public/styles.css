@@ -85,7 +85,7 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
 .section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 48px; }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
 .screens > h2 { margin-bottom: 24px; }
-.screen-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.screen-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 .screen-card { display: flex; flex-direction: column; align-items: center; gap: 24px; min-width: 0; padding: 28px 20px; border-radius: var(--card-radius); }
 .screen-card figcaption { width: 100%; flex: 1; }
 .phone { width: min(100%, 238px); overflow: hidden; border: 6px solid #263e43; border-radius: 28px; background: #faf8f2; }
@@ -102,7 +102,7 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
 .license-page pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: .9375rem; color: var(--muted); max-width: 52rem; }
 
 @media (max-width: 60rem) {
-  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .category-grid, .screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { gap: 28px; }
   .actions { align-items: stretch; }
   .screen-card { padding: 24px 16px; }
