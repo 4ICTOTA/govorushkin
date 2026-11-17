@@ -7,6 +7,8 @@
 Публичный репозиторий: https://github.com/4ICTOTA/govorushkin
 
 Адрес GitHub Pages: https://4ictota.github.io/govorushkin/
+Локальная папка существующего checkout — speech-practice-site; origin указывает
+на 4ICTOTA/govorushkin. Старый адрес Pages не перенаправляется.
 [Состояние исходников, проверки и публикация](docs/STATE.md).
 
 ## Устройство
