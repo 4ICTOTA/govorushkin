@@ -105,7 +105,7 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
 .license-page pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: .9375rem; color: var(--muted); max-width: 52rem; }
 
 @media (max-width: 60rem) {
-  .category-grid, .screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { gap: 28px; }
   .actions { align-items: stretch; }
   .screen-card { padding: 24px 16px; }

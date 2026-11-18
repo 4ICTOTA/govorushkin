@@ -71,6 +71,10 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory public
 иконки и всех изображений, доступность последнего блока. Кадры и журналы —
 в игнорируемом `output`. Проверки браузера не входят в публикацию.
 
+При замене оформления проверьте ссылки из обоих HTML-файлов и CSS,
+удалите оставшиеся без использования ресурсы и селекторы. `OFL.txt`
+сохраняется вместе со шрифтом, даже без прямой ссылки из HTML.
+
 Основания: [локальный шрифт @font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face),
 [адаптивный интерфейс](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design).
 
