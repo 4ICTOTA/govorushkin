@@ -79,7 +79,6 @@ nav a:hover, .site-footer a:hover, .text-link:hover { text-decoration: underline
 .category-copy { flex: 1 1 10rem; min-width: 0; padding-block: 24px; }
 .category-copy > * + * { margin-top: 8px; }
 .category .category-hero { width: 104px; height: 152px; object-fit: cover; flex: 0 0 104px; margin-left: auto; }
-.category svg { color: var(--primary); }
 .category p { font-size: .9375rem; }
 .sonorants { background: var(--mint); }
 .sibilants { background: var(--blue); }
